@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(164, 161, 161);
+    padding-bottom: 30px;
+    font-family: "kumbh Sans", sans-serif;   
+}
+
+a {
+    text-decoration: none;
+    color:  hsl(219, 9%, 45%);
+    font-family:  "kumbh Sans", sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 50px;
+}
+
+.left {
+    padding-bottom: 50px;
+}
+
+.thumbimg {
+    width: 400px;
+    border-radius: 18px;
+    
+}
+
+.smallimg {
+    display: flex;
+    gap: 28px;
+    padding-top: 20px;
+}
+
+.smallimg img {
+    width: 80px;
+    border-radius: 8px;
+}
+
+.smallimg .borderimg {
+    border: 3px solid hsl(26, 100%, 55%);
+    background-color: black;
+    opacity: 0.5;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 140px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.right h1 {
+    font-size: 40px;
+    width: 380px;
+    font-family: "kumbh Sans", sans-serif;
+}
+
+.right p {
+    width: 430px;
+    font-family: "kumbh Sans", sans-serif;
+    color: hsl(219, 9%, 45%);
+    font-size: 15px;
+}
+
+.price {
+    display: flex;
+    gap: 20px;
+}
+
+.price button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 27px;
+    border: none;
+    font-size: 20px;
+    font-family: "kumbh Sans", sans-serif;
+    cursor: pointer;
+}
+
+.price h3 {
+    font-family: "kumbh Sans", sans-serif;
+    font-size: 27px;
+}
+
+
+
+h5 {
+    font-size: 19px;
+    columns: rgb(165, 163, 163);
+    font-family: "kumbh Sans", sans-serif;
+    text-decoration: line-through;
+}
+
+.btns {
+    display: flex;
+    gap: 40px;
+    
+}
+
+.count {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    background-color: hsl(223, 64%, 98%);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.count img {
+    width: 20px;
+    height: 10px;
+
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 50px;
+    width: 250px;
+    border: none;
+    font-size: 16px;
+    background-color: hsl(26, 100%, 55%);
+    font-family: "kumbh Sans", sans-serif;
+    border-radius: 9px;
+    cursor: pointer;
+
+}
+
+.menu {
+    display: none;
+
+}
+
+/* .mobilebackground {
+    display: none;
+
+}*/
+
+@media screen and (max-width: 426px) {
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header {
+        padding: 10px;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    section {
+        flex-direction: column;
+        padding-bottom: 39px;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .right {
+        padding-left: 30px;
+        justify-content: center;
+    }
+
+    .thumbimg {
+        display: none;
+
+    }
+
+    .count {
+        width: 350px;
+    }
+
+    .cart {
+        width: 350px;
+    }
+
+    .smallimg {
+        display: none;
+    }
+    
+    .mobilebackground {
+        background-image: url("image-product-1.jpg");
+        width: 100%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* display: block; */
+    }
+
+    .right p {
+        width: 290px;
+
+    }
+
+}
+
+@media screen and (max-width: 376PX) {
+    .mobilebackground {
+        background-image: url("image-product-4.jpg");
+        width: 128%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .menu {
+        display: block;
+
+    }
+
+    header {
+        gap: 1px;
+    }
+
+    .right h1 {
+        font-size: 30px;
+
+    }
+
+    section {
+        padding-left: 40px;
+
+    }
+
+    .cart {
+        width: 250px;
+
+    }
+
+    .count {
+        width: 250px;
+    }
+    
+}
